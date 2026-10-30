@@ -224,3 +224,11 @@ For more runnable examples, browse [examples/sandbox/](https://github.com/openai
 ## External providers
 
 Applications can supply a sandbox client from a separately installed package through `SandboxRunConfig(client=...)`. See [Build a sandbox provider](custom-providers.md) for the authoring contract and a runnable external-package example.
+
+These providers publish and maintain their own packages. They are not part of the SDK, and their maintainers own installation, compatibility, and support.
+
+| Provider | Package | Client | Documentation |
+| --- | --- | --- | --- |
+| Hyperlight | `openai-agents-hyperlight` | `openai_agents_hyperlight.HyperlightSandboxClient` | [hyperlight-unikraft/integrations/openai-agents](https://github.com/hyperlight-dev/hyperlight-unikraft/tree/main/integrations/openai-agents) |
+| Mandala Computer | `mandala-computer[openai-agents]` | `mandala_computer.openai_agents.MandalaSandboxClient` | [OpenAI Agents SDK sandbox guide](https://mandala.computer/docs/guides/openai-agents-sandbox) |
+| Sprites | `sprites-openai-agents` | `sprites_openai_agents.SpritesSandboxClient` | [superfly/sprites-openai-agents](https://github.com/superfly/sprites-openai-agents#readme) |
